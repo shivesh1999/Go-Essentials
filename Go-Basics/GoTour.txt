@@ -1,0 +1,25 @@
+/*
+Important packages
+fmt
+time
+math
+io 
+reader
+images
+
+
+*/
+
+packages can export values by . 
+mutiple returns are possible in go 
+return without any vriables retirn the vales from the function intilization
+function can we variable level or function level 
+for loop can be used as while loop without semi colons
+for{} infinite loop
+if statemenr can also have intilizations before the comparision
+variables intialized at if statement can be used inse if{} and else{} only 
+integer in swutch is not allowed in go
+defer statements stops the execution of the staement till surrounding func is executed
+function acn also be passed as vlaues in go
+closure are function that references variable from outsides its body
+The select statement lets a goroutine wait on multiple communication operations.
