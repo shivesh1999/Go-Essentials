@@ -7,7 +7,7 @@ func main() {
 	// both array or slice need a datatype to be defined
 	//var card string = "Ace of spades"
 	//cards := []string{"Ace of diamonds", newCard()}
-	// here a new slice is created when we append the value so we have to assign t to a variable
+	// here a new slice is created when we append the value so we have to assign it to a variable
 	//cards = append(cards, "sex of spades")
 	// i is the index of the element in array
 	// card is the current card we are iterating

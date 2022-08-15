@@ -58,7 +58,7 @@ func checkLink(link string, c chan string) {
 //channels - channels are the only way to communicate with go routines
 // data in channesls should have a same type for sharing
 // intialize a channel and add it as a argument in the go routine function call
-// send sata to channel - channel<-5
+// send data to channel - channel<-5
 // receiveing data from a channel - mynumber<-channel
 // channels also face blockers when expect values from the channel
 // by default it will wait for only one go routine

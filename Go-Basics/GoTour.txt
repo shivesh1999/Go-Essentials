@@ -23,3 +23,22 @@ defer statements stops the execution of the staement till surrounding func is ex
 function acn also be passed as vlaues in go
 closure are function that references variable from outsides its body
 The select statement lets a goroutine wait on multiple communication operations.
+
+for acccessing a variable in different packages we need to assign a name starting with capital letter 
+make function is used to create slices 
+
+go mod tidy — go mod tidy works by loading all of the packages in the main module and all of the packages they import, recursively.
+
+interfaces - values can be of more than one type
+h.(type) - for getting the type from which human interface is coming
+asserting a type in go lang - h.(person).first
+every type is a interface type in go language
+go routines hel us achieve the parrallelism
+do routines are managed by go runtimes instead of normal threads being manged by the OS
+Do not communicate by sharing memory;instead, share memory by communicating.
+
+mutex provides you a lock on the memory till the perticular go routine is executed
+
+
+mutexrw allow anybody for reading purpose, if someone comes for the writing purposes i will kick
+them out and let the write request execute 
