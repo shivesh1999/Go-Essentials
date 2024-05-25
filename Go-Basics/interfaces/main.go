@@ -16,13 +16,6 @@ type bot interface {
 type englishBot struct{}
 type spanishBot struct{}
 
-func main() {
-	eb := englishBot{}
-	sb := spanishBot{}
-	printGreeting(eb)
-	printGreeting(sb)
-}
-
 func printGreeting(b bot) {
 	fmt.Println(b.getGreeting())
 }
@@ -34,6 +27,13 @@ func (eb englishBot) getGreeting() string {
 
 func (sb spanishBot) getGreeting() string {
 	return "Hola"
+}
+
+func main() {
+	eb := englishBot{}
+	sb := spanishBot{}
+	printGreeting(eb)
+	printGreeting(sb)
 }
 
 // overloading is not possible in GO

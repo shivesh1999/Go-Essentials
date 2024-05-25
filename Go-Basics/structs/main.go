@@ -51,8 +51,8 @@ func main() {
 	//updating using pointers
 	// &variableName - & is a operator which gives us access to the memory address
 	// *pointerName - * gives us the value in that memory address
-	// jimPointer := &jim
-	// jimPointer.updateName("jimmy")
+	jimPointer := &jim
+	jimPointer.updateName("jimmy")
 	//or we can write
 	//go allow the shorcut to convert type person to pointer to person if you have pointer as parameter
 	//for slices it functions differently
