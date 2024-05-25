@@ -11,7 +11,7 @@ import (
 
 // Create a new type of 'deck'
 // which is a slice of strings
-//its like deck type extends behaviour of string
+// its like deck type extends behaviour of string
 type deck []string
 
 // (d deck) is the reciever to the function
@@ -27,7 +27,7 @@ func (d deck) print() {
 func newDeck() deck {
 	cards := deck{}
 	cardSuits := []string{"Spades", "Diamonds", "Hearts", "Clubs"}
-	cardValues := []string{"Ace", "Two", "Three", "Four"}
+	cardValues := []string{"Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"}
 	for _, suit := range cardSuits {
 		for _, value := range cardValues {
 			cards = append(cards, value+" of "+suit)
@@ -36,7 +36,7 @@ func newDeck() deck {
 	return cards
 }
 
-//returning mutiple values from function is possibel in go
+// returning mutiple values from function is possibel in go
 func deal(d deck, handSize int) (deck, deck) {
 	return d[:handSize], d[handSize:]
 }
