@@ -38,8 +38,20 @@ func main() {
 
 // overloading is not possible in GO
 // cocerete type - we can create values of the type
-// interface type - we cannot create calues of the type
+// interface type - we cannot create values of the type
 // interfaces are not generic types
 // interfaces are implicit - go automatically take care of that
 // interfaces are a contract to help us manage typesb - make reuse of code
 // go throughh docs while using interfaces
+
+/*
+In Go, an interface is a type that specifies a set of method signatures (behavior),
+but it doesn’t provide the implementation of those methods. If a type provides
+implementations for all the methods declared by an interface, that type implicitly
+satisfies the interface, and we can use it as that interface type.
+*/
+
+/*
+An empty interface (interface{}) is a special case because it doesn't specify any methods.
+Any type in Go satisfies the empty interface, which makes it useful for accepting any type.
+*/

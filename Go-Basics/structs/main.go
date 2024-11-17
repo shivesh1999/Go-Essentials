@@ -15,6 +15,19 @@ type person struct {
 	//using just contactinfo it will work
 }
 
+// type Person struct {
+//     Name string `json:"name"`
+//     Age  int    `json:"age"`
+// }
+
+/*
+Go allows you to define methods on structs. Methods are functions that are associated with a
+type. You define methods with a receiver, which is the struct on which the method will
+operate.
+*/
+// func (receiver ReceiverType) MethodName() {
+//     // Method body
+// }
 func (p person) print() {
 	fmt.Printf(" %+v ", p)
 }
