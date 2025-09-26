@@ -41,7 +41,7 @@ func main() {
 // interface type - we cannot create values of the type
 // interfaces are not generic types
 // interfaces are implicit - go automatically take care of that
-// interfaces are a contract to help us manage typesb - make reuse of code
+// interfaces are a contract to help us manage types - make reuse of code
 // go throughh docs while using interfaces
 
 /*
@@ -54,4 +54,64 @@ satisfies the interface, and we can use it as that interface type.
 /*
 An empty interface (interface{}) is a special case because it doesn't specify any methods.
 Any type in Go satisfies the empty interface, which makes it useful for accepting any type.
+*/
+
+/*
+Go allows an interface to be used in function signatures where multiple types might be returned.
+This is useful when a function might return different types of results based on different conditions.
+
+func GetShape(name string) Shape {
+    switch name {
+    case "circle":
+        return Circle{Radius: 5}
+    case "square":
+        return Square{Side: 4}
+    default:
+        return nil
+    }
+}
+
+*/
+
+/*
+A type switch allows you to compare an interface value against multiple types in a concise way.
+This is similar to a regular switch statement, but instead of comparing values, it compares types.
+
+func Describe(i interface{}) {
+    switch v := i.(type) {
+    case int:
+        fmt.Println("Integer:", v)
+    case string:
+        fmt.Println("String:", v)
+    default:
+        fmt.Println("Unknown type")
+    }
+}
+
+*/
+
+/*
+Interfaces are commonly used in Go for mocking in unit tests,
+allowing you to replace real implementations with fake ones
+to test components in isolation.
+
+type Database interface {
+    Save(data string) error
+}
+
+type MockDatabase struct {
+    data string
+}
+
+func (m *MockDatabase) Save(data string) error {
+    m.data = data
+    return nil
+}
+
+func main() {
+    db := &MockDatabase{}
+    db.Save("mock data")
+    fmt.Println(db.data) // Output: mock data
+}
+
 */

@@ -73,7 +73,7 @@ func main() {
 	// in case of fnction it is passed by value but it has the pointer
 	// these are called refernce type data structure - slices, maps, channels, pointers, functions - dont worry about pointers
 	// non refeernce types - int,float,string,bool, structs - use pointers in this case
-	jim.updateName("jimmy")
+	// jim.updateName("timmy")
 	jim.print()
 
 }

@@ -1,5 +1,0 @@
-Recursion - recursion is function calling itself
-until a specified condition is met 
-
-recursion tree - recusrsion tree is represtation of 
-program flow 

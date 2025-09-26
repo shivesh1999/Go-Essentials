@@ -19,8 +19,8 @@ type deck []string
 // print function.
 // norally we use two letter varible name in receiver
 func (d deck) print() {
-	for i, card := range d {
-		fmt.Println(i, card)
+	for _, card := range d {
+		fmt.Println(card)
 	}
 }
 
@@ -36,7 +36,7 @@ func newDeck() deck {
 	return cards
 }
 
-// returning mutiple values from function is possibel in go
+// returning mutiple values from function is possible in go
 func deal(d deck, handSize int) (deck, deck) {
 	return d[:handSize], d[handSize:]
 }
