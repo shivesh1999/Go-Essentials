@@ -31,8 +31,6 @@ A sample application structure following Go best practices:
 - API handlers and services
 - Modular design
 
-## 🚀 Getting Started
-
 ### Prerequisites
 - Go 1.16 or higher
 - Basic understanding of programming concepts
@@ -72,5 +70,4 @@ Feel free to:
 ## 📝 License
 This project is available for personal learning and educational purposes.
 
-## 📫 Contact
-- GitHub: [@shivesh1999](https://github.com/shivesh1999) 
+
